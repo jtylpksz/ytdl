@@ -26,18 +26,18 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  metadataBase: new URL('https://ytdl.vercel.app'),
+  metadataBase: new URL('https://ytdl-lime.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Ytdl',
     description: 'Download YouTube Videos',
-    url: 'https://ytdl.vercel.app',
+    url: 'https://ytdl-lime.vercel.app',
     siteName: 'Ytdl',
     images: [
       {
-        url: 'https://ytdl.vercel.app/favicon.ico',
+        url: 'https://ytdl-lime.vercel.app/favicon.ico',
         width: 800,
         height: 600,
       },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: 'Ytdl',
     description: 'Download Youtube Videos',
     creator: '@jtylpksz',
-    images: ['https://ytdl.vercel.app/favicon.ico'],
+    images: ['https://ytdl-lime.vercel.app/favicon.ico'],
   },
 };
 
