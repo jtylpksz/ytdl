@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="text-center absolute bottom-0 w-full p-4 border-t">
+    <footer className="text-center w-full p-4 border-t">
       Made with <span className="text-pink-500">❤️ </span> by{' '}
       <a
         href="https://github.com/jtylpksz/ytdl"

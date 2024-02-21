@@ -3,7 +3,7 @@ import { ModeToggle } from '@/components/mode-toggle';
 
 export default function Home() {
   return (
-    <main className="max-w-3xl m-auto p-8">
+    <main className="max-w-3xl m-auto p-8 min-h-screen">
       <nav className="flex justify-end">
         <ModeToggle />
       </nav>
