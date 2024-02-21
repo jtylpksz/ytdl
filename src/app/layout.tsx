@@ -1,15 +1,9 @@
 import '@/styles/globals.css';
-import { Inter as FontSans } from 'next/font/google';
 import type { Metadata } from 'next';
 
 import { ThemeProvider } from '@/components/theme-provider';
 import { Footer } from '@/components/footer';
 import { cn } from '@/lib/utils';
-
-export const fontSans = FontSans({
-  subsets: ['latin'],
-  variable: '--font-sans',
-});
 
 export const metadata: Metadata = {
   title: 'YouTube Downloader',
@@ -70,7 +64,6 @@ export default function RootLayout({
       <body
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
-          fontSans.variable
         )}
       >
         <ThemeProvider
