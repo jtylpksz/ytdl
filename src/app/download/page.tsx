@@ -44,7 +44,9 @@ export default async function Download({
   if (video.error) {
     return (
       <main className="max-w-3xl m-auto p-8 text-center min-h-screen">
-        <h1 className="text-center text-3xl text-balance leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] mb-3">Video not found</h1>
+        <h1 className="text-center text-3xl text-balance leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] mb-3">
+          Video not found
+        </h1>
         <p className="opacity-80 mb-4">
           Something went wrong, please try again later
         </p>
@@ -103,6 +105,36 @@ export default async function Download({
             </CardContent>
           </Card>
         ))}
+
+        <details>
+          <summary className="outline-none">
+            View other formats (only video / only audio)
+          </summary>
+
+          <section className="flex flex-col gap-4">
+            {video.adaptiveFormats.map((format) => (
+              <Card
+                key={format.itag}
+                className="flex justify-between items-center"
+              >
+                <CardHeader className="p-4 px-6">
+                  <h3 className="font-bold text-2xl">{format.qualityLabel}</h3>
+                  {format.audioQuality ? <h3 className="font-bold text-2xl">{format.audioQuality}</h3> : null}
+                  <small>{format.mimeType}</small>
+                </CardHeader>
+
+                <CardContent className="p-0 px-6">
+                  <a
+                    href={format.url}
+                    className="inline-flex items-center justify-center px-4 py-2 text-sm font-bold shadow whitespace-nowrap rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90"
+                  >
+                    Download
+                  </a>
+                </CardContent>
+              </Card>
+            ))}
+          </section>
+        </details>
       </section>
     </main>
   );

@@ -35,6 +35,7 @@ export const Form = () => {
           type="url"
           name="url"
           placeholder="https://www.youtube.com/watch?v="
+          className="mt-1 mb-3"
           required
         />
         <SubmitButton />

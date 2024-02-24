@@ -8,7 +8,7 @@ export default function Home() {
         <ModeToggle />
       </nav>
 
-      <h1 className="text-center text-3xl text-balance leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] mb-3">
+      <h1 className="text-center text-3xl mt-6 lg:mt-12 text-balance leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] mb-3">
         YouTube Downloader
       </h1>
 

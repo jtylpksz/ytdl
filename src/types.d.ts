@@ -45,6 +45,7 @@ export interface AdaptiveVideoFormat {
   projectionType: string;
   averageBitrate: number;
   approxDurationMs: string;
+  audioQuality?: string;
 }
 
 export interface APIResponse {
