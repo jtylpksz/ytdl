@@ -127,6 +127,7 @@ export default async function Download({
                   <a
                     href={format.url}
                     className="inline-flex items-center justify-center px-4 py-2 text-sm font-bold shadow whitespace-nowrap rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90"
+                    download
                   >
                     Download
                   </a>
